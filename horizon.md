@@ -83,7 +83,7 @@ Horizon 仪表盘的路由是 `/horizon` ，默认只能在 `local` 环境中访
 可以使用进程管理工具 Supervisor 来管理 `horizon` 进程，下面配置文件就已够用：
 
     [program:horizon]
-    process_name=%(program_name)
+    process_name=%(program_name)s
     command=php /home/forge/app.com/artisan horizon
     autostart=true
     autorestart=true
